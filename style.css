@@ -1,0 +1,42 @@
+.conatiner-col{
+    height:80vh;
+    background: url(hero-bg.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    position: relative;
+    }
+    .conatiner-col::before{
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .conatiner-col>h2{
+        padding-top:13%;
+        padding-left: 5%;
+    }
+    .slider-img{
+        position: absolute;
+        top:180px;
+        right:10px;
+    }
+    @media screen and (max-width:400px){
+        .slider-img{
+            top:300px;
+        }
+    }
+    .nav-item{
+        padding-left:30px;
+    }
+    .nav-link:hover{
+        text-decoration: underline;
+    }
+    .conatiner-col>h1{
+        padding-top: 10%;
+        color: white;
+    }
